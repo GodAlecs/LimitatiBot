@@ -1,7 +1,7 @@
-# 🤖 LimitatiBot [0.1]
+# 🤖 LimitatiBot [0.2]
 LimitatiBot is a simple telegram bot to establish a conversation with a user without having to use private chats.
 
-The bot was created on 02/02/2022, its current version is 0.1 STABLE, there will be many more updates in the future.
+The bot was created on 02/02/2022, its current version is 0.2 STABLE, there will be many more updates in the future.
 
 # ✅ Features
 - 6 Languages available
@@ -30,4 +30,4 @@ You can find us on telegram, here are some useful links
 - https://t.me/AlexProjects
 - https://t.me/AlexProjectsBot
 
-# VERSION 0.1 STABLE
+# VERSION 0.2 STABLE
