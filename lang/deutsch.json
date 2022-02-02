@@ -1,0 +1,8 @@
+{
+    "start": "**Eingeschränkter Bot von @AlexProjects**\n\nverfügbar auf [GitHub](https://github.com/xMrPente/LimitatiBot)\n\nUm den Nachrichtentext zu ändern, gehen Sie zum Ordner „lang“ in unserem Quellcode",
+    "message_send_message": "**✔️ Nachricht gesendet**",
+    "operator_message_prefix": "**🔧 Operator** ➣",
+    "user_prefix": "🆕💬 |",
+    "error_message_reply": "⚠️ **Fehler:** __Sie müssen eine Nachricht beantworten__",
+    "photo_reply_message": "**Antworten Sie auf diese Nachricht, um zu antworten.** 💬"
+}

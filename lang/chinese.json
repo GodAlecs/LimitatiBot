@@ -1,0 +1,8 @@
+{
+    "start": "**Limited Bot By @AlexProjects**\n\navailable on [GitHub](https://github.com/xMrPente/LimitatiBot)\n\n要更改消息文本，請轉到我們源代碼中的“lang”文件夾",
+    "message_send_message": "**✔️ 已發送消息**",
+    "operator_message_prefix": "**🔧 操作員** ➣",
+    "user_prefix": "🆕💬 |",
+    "error_message_reply": "⚠️ **錯誤:** __您必須回复消息__",
+    "photo_reply_message": "**回复此消息以回复.** 💬"
+}
