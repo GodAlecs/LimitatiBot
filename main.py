@@ -5,24 +5,33 @@
 # The sale of the SRC CODE is prohibited
 
 # Libraries
+import configparser
 from pyrogram import *
 from pyrogram import Client, filters
 from pyrogram.session import Session
 import json
 
+config = configparser.ConfigParser()
+config.read('config.ini')
+
+#######################################################################################
+# EDIT THE CONFIG.INI
+
 app = Client(
     "main",
-    api_id = , # Insert your telegram API ID before the comma, remember NOT TO PUT the ""
-    api_hash = "", # Insert your HASH API into the ""
-    bot_token = "" # Enter the bot token
+    api_id = config['Credentials']['API_ID'],
+    api_hash = config['Credentials']['API_HASH'],
+    bot_token = config['Credentials']['TOKEN']
 )
 
-ALIAS = ["/"] # Command prefixes
-ADMIN = 1845164702 # ID ADMIN
-CMDB = ["start"] # Commands not to be seen by admins
+ALIAS = config['Variables']['ALIAS']
+ADMIN = int(config['Variables']['ADMIN_ID'])
+CMDB = config['Variables']['CMDB']
 
-lingua = json.load(open(f"lang/english.json")) # <- To change the bot language, replace the language name, example from "english.json" to "italiano.json"
-# The available languages ​​can be found in the "lang" directory in the bot's source code
+lingua = json.load(open(f"lang/" + config['Language']['LANGUAGE'] + ".json"))
+
+# EDIT THE CONFIG.INI
+#######################################################################################
 
 # Start
 
