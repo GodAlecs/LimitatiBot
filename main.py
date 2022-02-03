@@ -5,12 +5,11 @@
 # The sale of the SRC CODE is prohibited
 
 # Libraries
-import configparser
+import configparser, json
 from pyrogram import (
     Client, 
     filters
 )
-import json
 
 config = configparser.ConfigParser()
 config.read('config.ini')
