@@ -6,9 +6,10 @@
 
 # Libraries
 import configparser
-from pyrogram import *
-from pyrogram import Client, filters
-from pyrogram.session import Session
+from pyrogram import (
+    Client, 
+    filters
+)
 import json
 
 config = configparser.ConfigParser()
