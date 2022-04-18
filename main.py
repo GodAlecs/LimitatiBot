@@ -28,7 +28,7 @@ ALIAS = config['Variables']['ALIAS']
 ADMIN = int(config['Variables']['ADMIN_ID'])
 CMDB = config['Variables']['CMDB']
 
-lingua = json.load(open(f"lang/" + config['Language']['LANGUAGE'] + ".json"))
+lingua = json.load(open(f"lang/" + config['Language']['LANGUAGE'] + ".json", encoding = 'utf-8'))
 
 # EDIT THE CONFIG.INI
 #######################################################################################
