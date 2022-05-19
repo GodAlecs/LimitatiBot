@@ -8,6 +8,12 @@ The bot was created on 02/02/2022, there will be many more updates in the future
 - 100% Configurable
 - Media support (photo / video / sticker / gif)
 
+**Table of Contents**
+
+[TOCM]
+
+[TOC]
+
 # ▶️ Examples
 ### - Language File
 ```json
