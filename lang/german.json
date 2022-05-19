@@ -4,7 +4,7 @@
     "operator_message_prefix": "**🔧 Operator** ➣",
     "user_prefix": "🆕💬 |",
     "error_message_reply": "⚠️ **Fehler:** __Sie müssen eine Nachricht beantworten__",
-    "photo_reply_message": "**Antworten Sie auf diese Nachricht, um zu antworten.** 💬",
+    "photo_reply_message": "**Antworten Sie auf diese Nachricht, um zu antworten** 💬",
     "he_answered": "geantwortet",
     "start_chat_button": "✨ Chat beginnen",
     "end_chat_button": "❌ Ende des Gesprächs",
