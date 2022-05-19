@@ -33,17 +33,17 @@ lang = json.load(open(f"lang/" + config['Language']['LANGUAGE'] + ".json", encod
 def database():
     async def func(_, client, msg):
         try:
-            open(f"Utenti/{msg.from_user.id}")
-            j = json.load(open(f"Utenti/{msg.from_user.id}"))
+            open(f"User/{msg.from_user.id}")
+            j = json.load(open(f"User/{msg.from_user.id}"))
             if not j['username'] == f"{msg.from_user.username}":
                 j['username'] = f"{msg.from_user.username}"
                 j = str(j).replace('{', '{\n    ')
                 j = str(j).replace(',', ',\n   ')
                 j = str(j).replace("'", '"')
                 j = str(j).replace('}', '\n}')
-                open(f"Utenti/{msg.from_user.id}", "w").write(j)
+                open(f"User/{msg.from_user.id}", "w").write(j)
         except FileNotFoundError:
-            open(f"Utenti/{msg.from_user.id}", "w").write('{\n    ' +
+            open(f"User/{msg.from_user.id}", "w").write('{\n    ' +
         f'"username": "{msg.from_user.username}",\n    "id": {msg.from_user.id},\n    "input": "false"' + '\n}')
         return True
     return filters.create(func)
@@ -73,7 +73,7 @@ async def chat(app, message):
         [InlineKeyboardButton(text=lang['end_chat_button'], callback_data='avcend')]
     ])
 
-    j = json.load(open(f"Utenti/{message.from_user.id}"))
+    j = json.load(open(f"User/{message.from_user.id}"))
 
     if j['input'] == "avc":
         nome = message.from_user.first_name
@@ -150,13 +150,13 @@ async def query(client, query):
                 [InlineKeyboardButton(text=lang["end_chat_button"], callback_data='avcend')]
             ])
 
-            j = json.load(open(f"Utenti/{query.from_user.id}"))
+            j = json.load(open(f"User/{query.from_user.id}"))
             j['input'] = f"avc"
             j = str(j).replace('{', '{\n    ')
             j = str(j).replace(',', ',\n   ')
             j = str(j).replace("'", '"')
             j = str(j).replace('}', '\n}')
-            open(f"Utenti/{query.from_user.id}", "w").write(j)
+            open(f"User/{query.from_user.id}", "w").write(j)
 
             await query.edit_message_text(lang["start_chat_message"], reply_markup=avckey, disable_web_page_preview=True)
 
@@ -172,13 +172,13 @@ async def query(client, query):
                 [InlineKeyboardButton(text='🏡 Home', callback_data='home')]
             ])
 
-            j = json.load(open(f"Utenti/{query.from_user.id}"))
+            j = json.load(open(f"User/{query.from_user.id}"))
             j['input'] = f"false"
             j = str(j).replace('{', '{\n    ')
             j = str(j).replace(',', ',\n   ')
             j = str(j).replace("'", '"')
             j = str(j).replace('}', '\n}')
-            open(f"Utenti/{query.from_user.id}", "w").write(j)
+            open(f"User/{query.from_user.id}", "w").write(j)
 
             await query.edit_message_text(lang["end_chat_success"], reply_markup=avcendkey, disable_web_page_preview=True)
 
