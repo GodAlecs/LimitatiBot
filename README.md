@@ -59,7 +59,7 @@ pip install configparser
 
 - Once this is done, modify the "config.ini" with your credentials
 
-- Then download the source code and start it with the following command
+### - Then download the source code and start it with the following command
 ```python
 python3 main.py
 ```
