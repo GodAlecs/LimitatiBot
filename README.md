@@ -3,19 +3,13 @@ LimitatiBot is a simple telegram bot to establish a conversation with a user wit
 
 The bot was created on 02/02/2022, there will be many more updates in the future.
 
-
-[TOCM]
-
-[TOC]
-
-
 # ✅ Features
 - 6 Languages available
 - 100% Configurable
 - Media support (photo / video / sticker / gif)
 
 # ▶️ Examples
-###- Language File
+- Language File
 ```json
 {
     "start": "**Limited Bot By @AlexProjects**\n\navailable on [GitHub](https://github.com/xMrPente/LimitatiBot)\n\nTo change the message text, go to the 'lang' folder in our source code",
@@ -32,7 +26,7 @@ The bot was created on 02/02/2022, there will be many more updates in the future
     "start_chat_message": "🆗 Chat Started!\n\nNow, send me **a message** explaining your problem! One of our **Admin** will answer you as soon as possible"
 }
 ```
-###- Config File
+- Config File
 ```txt
 [Credentials]
 # Enter your credentials
@@ -56,7 +50,7 @@ CMDB = start
 LANGUAGE = english
 ```
 #❓ How To Install
-###- Install the libraries
+- Install the libraries
 ```python
 pip install pyrogram
 pip install tgcrypto 
@@ -65,7 +59,7 @@ pip install configparser
 
 - Once this is done, modify the "config.ini" with your credentials
 
-###- Then download the source code and start it with the following command
+- Then download the source code and start it with the following command
 ```python
 python3 main.py
 ```
