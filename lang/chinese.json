@@ -4,7 +4,7 @@
     "operator_message_prefix": "**🔧 操作員** ➣",
     "user_prefix": "🆕💬 |",
     "error_message_reply": "⚠️ **錯誤:** __您必須回复消息__",
-    "photo_reply_message": "**回复此消息以回复.** 💬",
+    "photo_reply_message": "**回复此消息以回复** 💬",
     "he_answered": "回复",
     "start_chat_button": "✨ 开始聊天",
     "end_chat_button": "❌ 结束聊天",
