@@ -4,5 +4,11 @@
     "operator_message_prefix": "**🔧 Operador** ➣",
     "user_prefix": "🆕💬 |",
     "error_message_reply": "⚠️ **Error:** __Tienes que responder un mensaje.__",
-    "photo_reply_message": "**Responde este mensaje para responder.** 💬"
+    "photo_reply_message": "**Responde este mensaje para responder** 💬",
+    "he_answered": "responder a",
+    "start_chat_button": "✨ Comenzar chat",
+    "end_chat_button": "❌ Chat finalizado",
+    "answer_admin": "👮‍♂️ Eres administrador, no puedes hacer clic en este botón",
+    "end_chat_success": "🆗 Terminado con éxito",
+    "start_chat_message": "🆗 ¡Chat iniciado!\n\nAhora, ¡envíame **un mensaje** explicando tu problema! Uno de nuestros **Admin** le responderá lo antes posible"
 }
