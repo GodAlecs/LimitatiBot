@@ -111,10 +111,10 @@ async def chat(app, message):
                         try:
                             r = message.reply_to_message.entities[0].user
                             await app.send_message(
-                                chat_id=i, text=f"💬👮‍♀️ {message.from_user.mention}" + lang["he_answered"] + f" {r.mention} » {message.text}")
+                                chat_id=i, text=f"💬👮‍♀️ {message.from_user.mention} " + lang["he_answered"] + f" {r.mention} » {message.text}")
                         except Exception:
                             await app.send_message(
-                                chat_id=i, text=f"💬👮‍♀️ {message.from_user.first_name}" + lang["he_answered"] + f" {mention_idsender} » {message.text}")
+                                chat_id=i, text=f"💬👮‍♀️ {message.from_user.first_name} " + lang["he_answered"] + f" {mention_idsender} » {message.text}")
                     else:
                         r = message.reply_to_message.entities[0].user
                         await app.forward_messages(
@@ -125,6 +125,15 @@ async def chat(app, message):
         except AttributeError:
             await app.send_message(chatid, lang["error_message_reply"])
 
+@app.on_edited_message()
+async def edited(app, message):
+
+    avckey = InlineKeyboardMarkup([
+        [InlineKeyboardButton(text=lang["end_chat_button"], callback_data='avcend')]
+    ])
+
+    await message.reply_text(lang['message_edited'], quote=True, reply_markup=avckey)
+    
 @app.on_callback_query()
 async def query(client, query):
 
@@ -146,19 +155,20 @@ async def query(client, query):
         if query.from_user.id in ADMIN:
             await query.answer(lang["answer_admin"], show_alert=True)
         else:    
-            avckey = InlineKeyboardMarkup([
-                [InlineKeyboardButton(text=lang["end_chat_button"], callback_data='avcend')]
-            ])
+            if j['input'] == "avc":
+                await query.answer(lang['chat_alredy_open'], show_alert=True)
+            else:
+                avckey = InlineKeyboardMarkup([
+                    [InlineKeyboardButton(text=lang["end_chat_button"], callback_data='avcend')]
+                ])
+                j['input'] = f"avc"
+                j = str(j).replace('{', '{\n    ')
+                j = str(j).replace(',', ',\n   ')
+                j = str(j).replace("'", '"')
+                j = str(j).replace('}', '\n}')
+                open(f"Utenti/{query.from_user.id}", "w").write(j)
 
-            j = json.load(open(f"User/{query.from_user.id}"))
-            j['input'] = f"avc"
-            j = str(j).replace('{', '{\n    ')
-            j = str(j).replace(',', ',\n   ')
-            j = str(j).replace("'", '"')
-            j = str(j).replace('}', '\n}')
-            open(f"User/{query.from_user.id}", "w").write(j)
-
-            await query.edit_message_text(lang["start_chat_message"], reply_markup=avckey, disable_web_page_preview=True)
+                await query.edit_message_text(lang["start_chat_message"], reply_markup=avckey, disable_web_page_preview=True)
 
 
 #   AvcEnd
