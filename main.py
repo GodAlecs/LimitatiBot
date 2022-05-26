@@ -151,7 +151,7 @@ async def query(client, query):
 #   Avc
 
     if query.data == "avc":
-
+        j = json.load(open(f"User/{query.from_user.id}"))
         if query.from_user.id in ADMIN:
             await query.answer(lang["answer_admin"], show_alert=True)
         else:    
