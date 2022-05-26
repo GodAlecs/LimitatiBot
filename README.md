@@ -68,7 +68,6 @@ python3 main.py
 ```
 
 # 📝 Todo list
-- Database Support (MySQL / sqlite3 / json)
 - All languages of the world available
 - Command /ban
 - Command /unban
