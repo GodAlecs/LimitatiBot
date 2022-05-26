@@ -10,5 +10,7 @@
     "end_chat_button": "❌ Terminer la conversation",
     "answer_admin": "👮‍♂️ Vous êtes administrateur, vous ne pouvez pas cliquer sur ce bouton",
     "end_chat_success": "🆗 Terminé avec succès",
-    "start_chat_message": "🆗 Chat commencé!\n\nMaintenant, envoyez-moi **un message** expliquant votre problème! Un de nos **Admin** vous répondra dans les plus brefs délais"
+    "start_chat_message": "🆗 Chat commencé!\n\nMaintenant, envoyez-moi **un message** expliquant votre problème! Un de nos **Admin** vous répondra dans les plus brefs délais",
+    "message_edited": "**✏️ Message modifié**\n\nVous avez édité le message, le destinataire <u>ne verra pas la modification que vous avez apportée</u>, cependant nous vous conseillons de **réécrire correctement le message**",
+    "chat_alredy_open": "⚠️ Le chat a déjà commencé"
 }
