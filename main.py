@@ -166,7 +166,7 @@ async def query(client, query):
                 j = str(j).replace(',', ',\n   ')
                 j = str(j).replace("'", '"')
                 j = str(j).replace('}', '\n}')
-                open(f"Utenti/{query.from_user.id}", "w").write(j)
+                open(f"User/{query.from_user.id}", "w").write(j)
 
                 await query.edit_message_text(lang["start_chat_message"], reply_markup=avckey, disable_web_page_preview=True)
 
