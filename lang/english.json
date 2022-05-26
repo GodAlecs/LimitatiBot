@@ -10,5 +10,7 @@
     "end_chat_button": "❌ End Chat",
     "answer_admin": "👮‍♂️ You are admin, you cannot click this button",
     "end_chat_success": "🆗 Successfully finished",
-    "start_chat_message": "🆗 Chat Started!\n\nNow, send me **a message** explaining your problem! One of our **Admin** will answer you as soon as possible"
+    "start_chat_message": "🆗 Chat Started!\n\nNow, send me **a message** explaining your problem! One of our **Admin** will answer you as soon as possible",
+    "message_edited": "**✏️ Modified Message**\n\nYou have edited the message, the recipient <u>will not see the modification you made</u>, however we advise you to **rewrite the message correctly**",
+    "chat_alredy_open": "⚠️ Chat already started"
 }
