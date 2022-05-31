@@ -5,7 +5,7 @@ The bot was created on 02/02/2022, there will be many more updates in the future
 
 Visit my site web for more information of the developer: 
 - Web & Docs: https://godalecs.it 
-- API Server: https://api.godalecs.it
+- API Server: http://api.godalecs.it
 
 # ✅ Features
 - 7 Languages available
