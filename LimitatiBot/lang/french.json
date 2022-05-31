@@ -1,0 +1,17 @@
+{
+    "start": "**Limited Bot By @AlexProjects**\n\ndisponible sur [GitHub](https://github.com/xMrPente/LimitatiBot)\n\nPour changer le texte du message, allez dans le dossier 'lang' dans notre code source",
+    "message_send_message": "**✔️ Message envoyé**",
+    "operator_message_prefix": "**🔧 Opérateur** ➣",
+    "user_prefix": "🆕💬 |",
+    "error_message_reply": "⚠️ **Erreur:** __Vous devez répondre à un message__",
+    "photo_reply_message": "**Répondre à ce message pour répondre** 💬",
+    "he_answered": "répondu à",
+    "start_chat_button": "✨ Démarrer la discussion",
+    "end_chat_button": "❌ Terminer la conversation",
+    "answer_admin": "👮‍♂️ Vous êtes administrateur, vous ne pouvez pas cliquer sur ce bouton",
+    "end_chat_success": "🆗 Terminé avec succès",
+    "start_chat_message": "🆗 Chat commencé!\n\nMaintenant, envoyez-moi **un message** expliquant votre problème! Un de nos **Admin** vous répondra dans les plus brefs délais",
+    "message_edited": "**✏️ Message modifié**\n\nVous avez édité le message, le destinataire <u>ne verra pas la modification que vous avez apportée</u>, cependant nous vous conseillons de **réécrire correctement le message**",
+    "chat_alredy_open": "⚠️ Le chat a déjà commencé",
+    "account_deleted": "⚠️ <b>Compte introuvable !</b>\n\nLe compte n'a pas été trouvé, nous n'avons donc pas pu envoyer de messages. Le compte a probablement été <b>verrouillé</b> ou <b>supprimé</b>"
+}
