@@ -15,7 +15,7 @@ async def broadcast(client, msg):
     await msg.delete(revoke=True)
     if msg.reply_to_message:
         await msg.reply_to_message.delete(revoke=True)
-        for x in os.listdir('User'):
+        for x in os.listdir('LimitatiBot/User/'):
             try:
                 await msg.reply_to_message.copy(int(x))
                 await asyncio.sleep(3)
