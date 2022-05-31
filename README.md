@@ -1,4 +1,4 @@
-# 🤖 LimitatiBot [2.0]
+# 🤖 LimitatiBot [2.5]
 LimitatiBot is a simple telegram bot to establish a conversation with a user without having to use private chats.
 
 The bot was created on 02/02/2022, there will be many more updates in the future.
@@ -25,20 +25,20 @@ The bot was created on 02/02/2022, there will be many more updates in the future
     "end_chat_success": "🆗 Successfully finished",
     "start_chat_message": "🆗 Chat Started!\n\nNow, send me **a message** explaining your problem! One of our **Admin** will answer you as soon as possible",
     "message_edited": "**✏️ Modified Message**\n\nYou have edited the message, the recipient <u>will not see the modification you made</u>, however we advise you to **rewrite the message correctly**",
-    "chat_alredy_open": "⚠️ Chat already started"
+    "chat_alredy_open": "⚠️ Chat already started",
+    "account_deleted": "⚠️ <b>Account Not Found!</b>\n\nThe account was not found, therefore we were unable to send any messages. The account is likely to have been <b>Locked</b> or <b>Deleted</b>"
 }
 ```
 ### - Config File
 ```txt
 [Credentials]
 # Enter your credentials
-API_ID = 
-API_HASH = 
-TOKEN = 
+API_ID =
+API_HASH =
+TOKEN =
 
 [Variables]
 ALIAS = /
-CMDB = start
 
 [Language]
 # Choose a language from
