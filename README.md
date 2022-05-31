@@ -3,6 +3,8 @@ LimitatiBot is a simple telegram bot to establish a conversation with a user wit
 
 The bot was created on 02/02/2022, there will be many more updates in the future.
 
+Visit my site web for more information of the developer: godalecs.it / api.godalecs.it
+
 # ✅ Features
 - 7 Languages available
 - 100% Configurable
