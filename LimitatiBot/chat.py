@@ -49,9 +49,13 @@ async def chat(app, message):
             for i in ADMIN:
                 if message.reply_to_message:
                     if message.text:
-                        r = message.reply_to_message.entities[0].user
-                        await app.send_message(
-                            chat_id=i, text=f"💬👮‍♀️ {message.from_user.first_name} " + lang["he_answered"] + f" {mention_idsender} » {message.text}")
+                        try:
+                            r = message.reply_to_message.entities[0].user
+                            await app.send_message(
+                                chat_id=i, text=f"💬👮‍♀️ {message.from_user.mention} " + lang["he_answered"] + f" {r.mention} » {message.text}")
+                        except Exception:
+                            await app.send_message(
+                                chat_id=i, text=f"💬👮‍♀️ {message.from_user.first_name} " + lang["he_answered"] + f" {mention_idsender} » {message.text}")
                     else:
                         r = message.reply_to_message.entities[0].user
                         await app.forward_messages(
