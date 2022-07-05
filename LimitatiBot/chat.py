@@ -65,5 +65,3 @@ async def chat(app, message):
                     chat_id=idsender, text=lang[f"operator_message_prefix"] + f" {message.text}", reply_markup=buttons.avckey)
         except AttributeError:
             return await app.send_message(chatid, lang["error_message_reply"])
-        except Exception:
-            return await app.send_message(message.chat.id, lang["account_deleted"])
